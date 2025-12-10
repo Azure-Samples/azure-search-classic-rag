@@ -1,6 +1,6 @@
 # Readme for classic RAG in Azure AI Search
 
-This series of exercises demonstrate the classic pattern for building RAG solutions on Azure AI Search. Classic RAG uses the original search engine pipeline instead of agentic retrieval, with no LLM integration except for at the end of the pipeline when you pass the search results to an LLM for answer formulation.
+This series demonstrates the classic pattern for building RAG solutions on Azure AI Search. Classic RAG uses the original search engine pipeline instead of agentic retrieval, with no LLM integration except for at the end of the pipeline when you pass the search results to an LLM for answer formulation.
 
 We now recommend [agentric retrieval](https://learn.microsoft.com/azure/search/agentic-retrieval-overview) for modern RAG workloads. However, if you have an existing solution built on Azure AI Search, a classic RAG pattern might meet your application requirements, with fewer code changes.
 
