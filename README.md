@@ -1,10 +1,8 @@
 # Readme for classic RAG in Azure AI Search
 
-This series demonstrates the classic pattern for building RAG solutions on Azure AI Search. Classic RAG uses the original search engine pipeline instead of agentic retrieval, with no LLM integration except for at the end of the pipeline when you pass the search results to an LLM for answer formulation.
+This series demonstrates the classic pattern for building RAG solutions on Azure AI Search. Classic RAG uses the original search engine pipeline instead of agentic retrieval, with no LLM integration except for at the end of the pipeline when you pass the search results to an LLM for answer formulation. In this series, you learn about the components, dependencies, and optimizations for maximizing relevance and minimizing costs in a classic RAG pattern.
 
-We now recommend [agentric retrieval](https://learn.microsoft.com/azure/search/agentic-retrieval-overview) for modern RAG workloads. However, if you have an existing solution built on Azure AI Search, a classic RAG pattern might meet your application requirements, with fewer code changes.
-
-In this series, you learn about the components, dependencies, and optimizations for maximizing relevance and minimizing costs in a classic RAG pattern.
+We now recommend [**agentric retrieval**](https://learn.microsoft.com/azure/search/agentic-retrieval-overview) for modern RAG workloads. However, if you already have an existing solution built on Azure AI Search, a classic RAG pattern might meet your application requirements with fewer code changes.
 
 Sample data is a [collection of PDFs](https://github.com/Azure-Samples/azure-search-sample-data/tree/main/nasa-e-book/earth_book_2019_text_pages) uploaded to Azure Storage. The content is from [NASA's Earth free e-book](https://www.nasa.gov/ebooks/earth/).
 
@@ -12,13 +10,13 @@ Sample data is a [collection of PDFs](https://github.com/Azure-Samples/azure-sea
 
 - Set up your development environment. Choose your models for embeddings and chat. Learn how to structure an index for conversational search.
 
-- Set up an indexing pipeline that loads, chunks, embeds, and ingests searchable content
+- Set up an indexing pipeline that loads, chunks, embeds, and ingests searchable content.
 
-- Retrieve searchable content using queries and a chat model
+- Retrieve searchable content using queries and a chat model.
 
-- Maximize relevance
+- Maximize relevance by adding semantic ranker and a scoring profile.
 
-- Minimize storage and costs
+- Minimize vector storage and costs.
 
 We omitted a few aspects of a RAG pattern to reduce complexity:
 
